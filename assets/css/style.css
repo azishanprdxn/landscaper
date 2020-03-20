@@ -207,13 +207,21 @@ li {
 
 .wrapper {
   max-width: 1440px;
-  width: 95%;
+  width: 88%;
   margin: 0 auto;
 }
 
 /*=================================
   Header styling starts here
 =================================*/
+
+header {
+  background-color: #363636;
+}
+
+header a {
+  color: #fff;
+}
 
 .top-bar {
   width: 100%;
@@ -228,6 +236,30 @@ li {
 
 .top-bar>nav {
   width: 60%;
+}
+
+header h1 {
+  padding: 30px 26px;
+  color: #fff;
+  font-size: 26px;
+}
+
+nav ul {
+  padding: 40px 34px 0 0;
+  font-size: 15px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+nav li {
+  padding-left: 40px;
+}
+
+nav a:hover {
+  padding: 12px;
+  margin: -13px;
+  border: 1px solid #fff;
+  border-radius: 8px;
 }
 
 /*=================================
