@@ -215,6 +215,21 @@ li {
   Header styling starts here
 =================================*/
 
+.top-bar {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.top-bar>.logo {
+  width: 40%;
+}
+
+.top-bar>nav {
+  width: 60%;
+}
+
 /*=================================
   Header styling ends here
 =================================*/
@@ -223,6 +238,69 @@ li {
   main styling starts here
 =================================*/
 
+/* banner section */
+
+.banner {
+  text-align: center;
+}
+
+/* about section */
+
+.about .flexbox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.about .flexbox>.welcome {
+  width: 50%;
+}
+
+.about .flexbox>.care {
+  width: 25%;
+}
+
+/* services section */
+
+.services {
+  text-align: center;
+}
+
+.services .flexbox {
+  width: 100;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services .flexbox>.features {
+  width: 25%;
+}
+
+/* gallery section */
+
+.gallery {
+  text-align: center;
+}
+
+.gallery .flexbox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery .flexbox>.projects {
+  width: 33.33%;
+}
+
+/* testimonials section */
+
+.testimonials {
+  text-align: center;
+}
+
 /*=================================
   main styling ends here
 =================================*/
@@ -230,6 +308,47 @@ li {
 /*=================================
   footer styling starts here
 =================================*/
+
+/* contact section */
+
+.contact {
+  text-align: center;
+}
+
+.contact .flexbox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact .flexbox>.contact-info {
+  width: 33.33%;
+}
+
+form .form-flex {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+form .form-flex>.your-name,
+form .form-flex>.your-email {
+  width: 50%;
+}
+
+form .form-flex>.your-message,
+form .form-flex>.send-button {
+  width: 100%;
+
+}
+
+/* social and copyright section */
+
+.dark-bg {
+  text-align: center;
+}
 
 /*=================================
   footer styling ends here
