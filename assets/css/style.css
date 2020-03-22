@@ -184,7 +184,6 @@ sub {
 body {
   box-sizing: border-box;
   font-family: sans-serif;
-  color: #464248;
 }
 
 a {
@@ -200,7 +199,8 @@ li {
 /* for container */
 
 .container {
-  background-color: #fff;
+  background-color: #f6f6f6;
+  color: #464248;
 }
 
 /* for wrapper */
@@ -466,8 +466,8 @@ nav a:hover {
 }
 
 .features img:hover {
-  border: 12px solid #464248;
-  transition: 0.5s;
+  border: 12px solid rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
 }
 
 .features figcaption {
@@ -535,7 +535,6 @@ nav a:hover {
   margin: -2px;
   background-color: transparent;
   border: 2px solid #69ad31;
-  color: #69ad31;
   transition: 0.2s;
 }
 
@@ -610,12 +609,22 @@ nav a:hover {
 
 /* contact section */
 
-.contact {
+.contact .inner {
+  padding: 100px 136px;
   text-align: center;
+}
+
+.contact h3 {
+  font-size: 36px;
+}
+
+.contact p {
+  font-size: 18px;
 }
 
 .contact .flexbox {
   width: 100%;
+  padding: 90px 0 0 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -625,11 +634,39 @@ nav a:hover {
   width: 33.33%;
 }
 
-form .form-flex {
+.contact .flexbox>form {
   width: 100%;
+}
+
+.contact-info h4 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+form h4 {
+  padding: 80px 0 40px 0;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.contact-info .bottom-underline {
+  margin-top: 10px;
+  margin-bottom: 14px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+  padding-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+form .form-flex {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
 }
 
 form .form-flex>.your-name,
@@ -640,7 +677,47 @@ form .form-flex>.your-email {
 form .form-flex>.your-message,
 form .form-flex>.send-button {
   width: 100%;
+}
 
+.form-flex input {
+  width: 81%;
+  margin: 0 0 16px 0;
+  padding: 9px 18px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+  outline: none;
+}
+
+.form-flex textarea {
+  width: 91%;
+  margin: 0 0 16px 0;
+  padding: 20px 18px 28px 18px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+  outline: none;
+}
+
+.form-flex input:focus,
+.form-flex textarea:focus {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+}
+
+.form-flex a {
+  padding: 14px 17px;
+  background-color: #69ad31;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.form-flex a:hover {
+  margin: -2px;
+  background-color: transparent;
+  border: 2px solid #69ad31;
+  color: #69ad31;
+  transition: 0.2s;
 }
 
 /* social and copyright section */
